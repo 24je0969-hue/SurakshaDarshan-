@@ -9,7 +9,10 @@ import {
 
 const BookingContext = createContext(null)
 
-const ML_API_URL = 'http://10.247.161.209:8000'
+// const ML_API_URL = 'http://10.93.76.209.:8000'
+const ML_API_URL = 'http://localhost:8001'
+
+
 const TEMPLE_NAME = 'Ambaji'
 
 const navratriDates = {

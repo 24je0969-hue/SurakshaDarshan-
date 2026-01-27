@@ -114,7 +114,7 @@ const VisitorDetails = () => {
       const res = await axios.post(
         "http://localhost:8000/api/v1/bookings/booking",
         bookingInfo,
-        { headers: { 'content-Type': 'application/json' } }
+        { headers: { 'content-Type': 'application/json' } , withCredentials: true }
       )
 
       if (res && (res.status === 200 || res.status === 201)) {
